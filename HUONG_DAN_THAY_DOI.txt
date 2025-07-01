@@ -1,0 +1,130 @@
+HƯỚNG DẪN THAY ĐỔI THÔNG TIN TRANG WEB AKANE.TSUKIII
+================================================================
+
+🔧 CÁCH THAY ĐỔI TÊN VÀ LIÊN KẾT MẠNG XÃ HỘI
+--------------------------------------------
+
+Để thay đổi tên và liên kết mạng xã hội, bạn cần chỉnh sửa file index.html:
+
+1. MỞ FILE INDEX.HTML
+   - Tìm file index.html trong thư mục gốc của dự án
+
+2. THAY ĐỔI TÊN PROFILE
+   - Tìm dòng: <h1 class="text-2xl font-bold mb-4">akane.tsukiii</h1>
+   - Thay đổi "akane.tsukiii" thành tên bạn muốn
+
+3. THAY ĐỔI LIÊN KẾT GITHUB
+   - Tìm dòng: href="https://akanetsukiii.github.io/my-ws"
+   - Thay đổi URL thành liên kết GitHub của bạn
+   - Tìm dòng: <h3 class="font-medium text-white">Github</h3>
+   - Có thể thay đổi tiêu đề nếu muốn
+   - Tìm dòng: <p class="text-gray-400 text-sm">AkaneTsukiii</p>
+   - Thay đổi "AkaneTsukiii" thành username GitHub của bạn
+
+4. THAY ĐỔI LIÊN KẾT DISCORD
+   - Tìm dòng: href="https://discordapp.com/users/1303349353192230942"
+   - Thay đổi ID Discord (1303349353192230942) thành ID Discord của bạn
+   - Tìm dòng: <h3 class="font-medium text-white">Akane Tsuki (Discord)</h3>
+   - Thay đổi tên hiển thị
+   - Tìm dòng: <p class="text-gray-400 text-sm">akane.tsukiii</p>
+   - Thay đổi username Discord
+
+5. THAY ĐỔI LIÊN KẾT FACEBOOK
+   - Tìm dòng: href="https://facebook.com/akane.tsukiii"
+   - Thay đổi "akane.tsukiii" thành username Facebook của bạn
+   - Tìm dòng: <h3 class="font-medium text-white">Nguyễn Khánh (Facebook)</h3>
+   - Thay đổi tên hiển thị
+   - Tìm dòng: <p class="text-gray-400 text-sm">Connect on Facebook</p>
+   - Có thể thay đổi mô tả này
+
+6. THAY ĐỔI LIÊN KẾT TIKTOK
+   - Tìm dòng: href="https://tiktok.com/@khahnguyn01"
+   - Thay đổi "@khahnguyn01" thành username TikTok của bạn
+   - Tìm dòng: <h3 class="font-medium text-white">Nguyễn Khánh (TikTok)</h3>
+   - Thay đổi tên hiển thị
+   - Tìm dòng: <p class="text-gray-400 text-sm">@khahnguyn01</p>
+   - Thay đổi username TikTok
+
+🎵 CÁCH THAY ĐỔI PLAYLIST SPOTIFY
+---------------------------------
+
+1. LẤY LIÊN KẾT PLAYLIST SPOTIFY
+   - Mở Spotify và tìm playlist bạn muốn nhúng
+   - Nhấp chuột phải vào playlist
+   - Chọn "Share" -> "Copy Spotify URI" hoặc "Copy link to playlist"
+   - Lấy ID playlist từ URL, ví dụ: spotify:playlist:7nWzjWHPVYniUzkCabEvPS
+   - ID playlist là phần sau "playlist:" (7nWzjWHPVYniUzkCabEvPS)
+
+2. THAY ĐỔI TRONG FILE INDEX.HTML
+   - Tìm dòng: src="https://open.spotify.com/embed/playlist/7nWzjWHPVYniUzkCabEvPS?utm_source=generator&theme=0"
+   - Thay đổi "7nWzjWHPVYniUzkCabEvPS" thành ID playlist của bạn
+   - Tìm dòng: <h3 class="font-medium text-white">Vocaloid - Akane Tsukiii</h3>
+   - Thay đổi tên playlist hiển thị
+   - Tìm dòng: <p class="text-gray-400 text-sm">Spotify Playlist</p>
+   - Có thể thay đổi mô tả playlist
+
+🖼️ CÁCH THAY ĐỔI AVATAR
+-----------------------
+
+Để thay đổi avatar, bạn chỉ cần thay thế các file ảnh trong thư mục assets/:
+
+1. AVATAR CHÍNH
+   - Thay thế file: assets/avt-main.jpg
+   - Để có hiệu ứng xoay, có thể thêm: assets/avt-main-alt1.jpg, assets/avt-main-alt2.jpg
+
+2. AVATAR GITHUB
+   - Thay thế file: assets/avt-github.jpg
+   - Có thể thêm: assets/avt-github-alt.jpg
+
+3. AVATAR DISCORD
+   - Thay thế file: assets/avt-discord.jpg
+   - Có thể thêm: assets/avt-discord-alt.jpg
+
+4. AVATAR FACEBOOK
+   - Thay thế file: assets/avt-facebook.jpg
+   - Có thể thêm: assets/avt-facebook-alt.jpg
+
+5. AVATAR TIKTOK
+   - Thay thế file: assets/avt-tiktok.jpg
+   - Có thể thêm: assets/avt-tiktok-alt.jpg
+
+📝 LƯU Ý QUAN TRỌNG
+------------------
+
+- Đảm bảo kích thước ảnh avatar phù hợp (khuyến nghị: 300x300px trở lên)
+- Giữ nguyên tên file để hệ thống hoạt động bình thường
+- Sau khi thay đổi, tải lại trang web để xem kết quả
+- Nếu muốn thêm hoặc bớt mạng xã hội, cần copy/paste đoạn code tương ứng
+- Để triển khai lên GitHub Pages, chỉ cần push toàn bộ file lên repository
+
+🔄 HIỆU ỨNG XOAY AVATAR
+-----------------------
+
+Hệ thống tự động xoay avatar mỗi 30 giây:
+- Avatar chính xoay đầu tiên
+- Các avatar mạng xã hội xoay theo thứ tự với độ trễ 5 giây
+- Nếu chỉ có 1 avatar cho mỗi loại, hiệu ứng xoay sẽ không hoạt động
+- Để tắt hiệu ứng xoay, xóa file assets/avatar-rotation.js
+
+📱 TƯƠNG THÍCH
+--------------
+
+Trang web được tối ưu cho:
+- Máy tính desktop
+- Tablet
+- Điện thoại di động
+- Tất cả trình duyệt hiện đại (Chrome, Firefox, Safari, Edge)
+
+🌐 TRIỂN KHAI
+-------------
+
+Để đưa trang web lên GitHub Pages:
+1. Tải tất cả file lên GitHub repository
+2. Vào Settings của repository
+3. Chọn Pages từ menu bên trái
+4. Chọn Source: Deploy from a branch
+5. Chọn Branch: main (hoặc master)
+6. Chọn Folder: / (root)
+7. Nhấn Save
+
+Trang web sẽ có địa chỉ: https://[username].github.io/[repository-name]
