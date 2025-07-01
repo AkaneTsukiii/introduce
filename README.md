@@ -1,92 +1,105 @@
-# Personal Links Website - akane.tsukiii
+# Trang Web Liên Kết Cá Nhân - akane.tsukiii
 
-A clean, modern personal link-in-bio page with dark theme and avatar rotation system.
+Trang web "link in bio" cá nhân hiện đại với giao diện tối và hệ thống xoay avatar tự động.
 
-## Features
+## Tính Năng
 
-- **Dark Theme**: Pure black background with purple accent colors
-- **Avatar Rotation**: Automatic avatar switching system for visual variety
-- **Social Media Integration**: Links to GitHub, Discord, Facebook, and TikTok
-- **Spotify Integration**: Embedded playlist for Vocaloid music collection
-- **Responsive Design**: Mobile-first layout optimized for all devices
-- **GitHub Pages Ready**: Static HTML file in root directory for easy deployment
+- **Giao Diện Tối**: Nền đen hoàn toàn với điểm nhấn màu tím
+- **Xoay Avatar**: Hệ thống tự động thay đổi avatar để tạo sự đa dạng
+- **Tích Hợp Mạng Xã Hội**: Liên kết đến GitHub, Discord, Facebook và TikTok
+- **Tích Hợp Spotify**: Nhúng playlist nhạc Vocaloid
+- **Thiết Kế Responsive**: Bố cục tối ưu cho mọi thiết bị
+- **Sẵn Sàng GitHub Pages**: File HTML tĩnh ở thư mục gốc để triển khai dễ dàng
 
-## Avatar System
+## Hệ Thống Avatar
 
-The website uses a file-based avatar system with multiple images for each platform:
+Website sử dụng hệ thống avatar dựa trên file với nhiều ảnh cho mỗi nền tảng:
 
-### Avatar Files Structure
+### Cấu Trúc File Avatar
 ```
 assets/
-├── avt-main.jpg           # Main profile avatar
-├── avt-main-alt1.jpg      # Alternative main avatar 1
-├── avt-main-alt2.jpg      # Alternative main avatar 2
-├── avt-github.jpg         # GitHub avatar
-├── avt-github-alt.jpg     # Alternative GitHub avatar
-├── avt-discord.jpg        # Discord avatar
-├── avt-discord-alt.jpg    # Alternative Discord avatar
-├── avt-facebook.jpg       # Facebook avatar
-├── avt-facebook-alt.jpg   # Alternative Facebook avatar
-├── avt-tiktok.jpg         # TikTok avatar
-└── avt-tiktok-alt.jpg     # Alternative TikTok avatar
+├── avt-main.jpg           # Avatar chính
+├── avt-main-alt1.jpg      # Avatar chính thay thế 1
+├── avt-main-alt2.jpg      # Avatar chính thay thế 2
+├── avt-github.jpg         # Avatar GitHub
+├── avt-github-alt.jpg     # Avatar GitHub thay thế
+├── avt-discord.jpg        # Avatar Discord
+├── avt-discord-alt.jpg    # Avatar Discord thay thế
+├── avt-facebook.jpg       # Avatar Facebook
+├── avt-facebook-alt.jpg   # Avatar Facebook thay thế
+├── avt-tiktok.jpg         # Avatar TikTok
+└── avt-tiktok-alt.jpg     # Avatar TikTok thay thế
 ```
 
-### Avatar Rotation
-- Main avatar rotates every 30 seconds
-- Social media avatars rotate with staggered timing (5-second intervals)
-- Smooth fade transitions between avatar changes
-- Fallback to default images if custom avatars aren't available
+### Xoay Avatar
+- Avatar chính xoay mỗi 30 giây
+- Avatar mạng xã hội xoay với thời gian lệch nhau (khoảng cách 5 giây)
+- Hiệu ứng chuyển đổi mượt mà giữa các avatar
+- Sử dụng ảnh mặc định nếu không có avatar tùy chỉnh
 
-## Setup Instructions
+## Hướng Dẫn Cài Đặt
 
-1. **Upload Avatar Images**: Place your avatar images in the `assets/` folder following the naming convention above
-2. **Deploy to GitHub Pages**: 
-   - Push to your GitHub repository
-   - Enable GitHub Pages in repository settings
-   - Set source to root directory
-3. **Customize Content**: Edit `index.html` to update:
-   - Profile name and description
-   - Social media links and usernames
-   - Spotify playlist embed URL
+1. **Tải Avatar**: Đặt ảnh avatar vào thư mục `assets/` theo quy ước đặt tên ở trên
+2. **Triển Khai GitHub Pages**: 
+   - Push lên GitHub repository
+   - Bật GitHub Pages trong cài đặt repository
+   - Đặt nguồn là thư mục gốc (root)
+3. **Tùy Chỉnh Nội Dung**: Chỉnh sửa `index.html` để cập nhật:
+   - Tên và mô tả profile
+   - Liên kết và username mạng xã hội
+   - URL nhúng playlist Spotify
 
-## Social Media Links
+## Liên Kết Mạng Xã Hội
 
-Current configured platforms:
-- **GitHub**: Personal projects and repositories
-- **Discord**: Direct message link
-- **Facebook**: Personal profile
-- **TikTok**: Content creation profile
+Các nền tảng hiện tại được cấu hình:
+- **GitHub**: Dự án và repository cá nhân
+- **Discord**: Liên kết tin nhắn trực tiếp
+- **Facebook**: Profile cá nhân
+- **TikTok**: Profile tạo nội dung
 
-## Spotify Integration
+## Tích Hợp Spotify
 
-Features an embedded Spotify playlist for Vocaloid music collection. The playlist automatically updates when changes are made on Spotify.
+Tích hợp playlist Spotify nhúng cho bộ sưu tập nhạc Vocaloid. Playlist tự động cập nhật khi có thay đổi trên Spotify.
 
-## Technical Stack
+## Công Nghệ Sử Dụng
 
-- **Frontend**: Vanilla HTML/CSS/JavaScript
-- **Styling**: Tailwind CSS via CDN
+- **Frontend**: HTML/CSS/JavaScript thuần
+- **Styling**: Tailwind CSS qua CDN
 - **Icons**: Font Awesome
-- **Fonts**: Inter from Google Fonts
-- **Deployment**: GitHub Pages compatible
+- **Fonts**: Inter từ Google Fonts
+- **Deployment**: Tương thích GitHub Pages
 
-## Browser Support
+## Hỗ Trợ Trình Duyệt
 
-- Modern browsers (Chrome, Firefox, Safari, Edge)
-- Mobile responsive design
-- Touch-friendly interactions
-- Progressive enhancement for older browsers
+- Trình duyệt hiện đại (Chrome, Firefox, Safari, Edge)
+- Thiết kế responsive trên mobile
+- Tương tác thân thiện với cảm ứng
+- Nâng cao dần cho trình duyệt cũ
 
-## File Structure
+## Cấu Trúc File
 
 ```
 /
-├── index.html              # Main page (GitHub Pages entry point)
+├── index.html              # Trang chính (điểm vào GitHub Pages)
 ├── assets/
-│   ├── avatar-rotation.js  # Avatar switching logic
-│   └── [avatar images]     # User avatar files
-├── client/                 # React development version
-├── server/                 # Express server for development
-└── README.md              # This file
+│   ├── avatar-rotation.js  # Logic xoay avatar
+│   └── [avatar images]     # File ảnh avatar người dùng
+├── client/                 # Phiên bản React development
+├── server/                 # Express server cho development
+├── HUONG_DAN_THAY_DOI.txt  # Hướng dẫn chỉnh sửa
+├── CAC_FILE_CAN_THIET.txt  # Danh sách file cần thiết
+└── README.md              # File này
 ```
 
-The root `index.html` is the production version optimized for GitHub Pages deployment.
+File `index.html` ở thư mục gốc là phiên bản production được tối ưu cho GitHub Pages.
+
+## Cách Sử Dụng
+
+1. **Thay Đổi Nội Dung**: Đọc file `HUONG_DAN_THAY_DOI.txt` để biết cách chỉnh sửa
+2. **File Cần Thiết**: Xem `CAC_FILE_CAN_THIET.txt` để biết file nào cần thiết cho deployment
+3. **Upload Avatar**: Thay thế các file ảnh trong thư mục `assets/`
+4. **Triển Khai**: Push lên GitHub và bật GitHub Pages
+
+## Liên Hệ
+
+Trang web được tạo cho akane.tsukiii với đầy đủ tích hợp mạng xã hội và nhạc Vocaloid.
