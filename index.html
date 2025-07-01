@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akane.tsukiii - Personal Links</title>
+    <meta name="description" content="Connect with akane.tsukiii across social platforms. Find my GitHub, Discord, Facebook, TikTok and latest Vocaloid playlist.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="akane.tsukiii - Personal Links">
+    <meta property="og:description" content="Connect with akane.tsukiii across social platforms">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://akanetsukiii.github.io">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(248, 80%, 62%)',
+                        secondary: 'hsl(253, 75%, 65%)',
+                        dark: 'hsl(0, 0%, 4%)',
+                        'dark-light': 'hsl(0, 0%, 10%)',
+                        'dark-card': 'hsl(0, 0%, 12%)'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .gradient-bg {
+            background: hsl(0, 0%, 0%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.25);
+        }
+        
+        .avatar-border {
+            background: linear-gradient(135deg, hsl(248, 80%, 62%) 0%, hsl(253, 75%, 65%) 100%);
+            padding: 4px;
+            border-radius: 50%;
+        }
+        
+
+        
+        .social-avatar {
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        
+        .spotify-container {
+            background: hsl(0, 0%, 12%);
+            border: 1px solid hsl(0, 0%, 20%);
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen text-white font-inter">
+    <div class="container mx-auto px-4 py-8 max-w-md">
+        <!-- Profile Header -->
+        <div class="text-center mb-8">
+            <!-- Profile Image -->
+            <div class="avatar-border w-28 h-28 mx-auto mb-4">
+                <img src="./assets/avt-main.jpg" 
+                     alt="akane.tsukiii Profile" 
+                     class="w-full h-full rounded-full object-cover"
+                     onerror="this.src='https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300'">
+            </div>
+            
+            <!-- Profile Name -->
+            <h1 class="text-2xl font-bold mb-4">akane.tsukiii</h1>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="space-y-4 mb-8">
+            <!-- GitHub Link -->
+            <a href="https://akanetsukiii.github.io/my-ws" 
+               class="flex items-center bg-dark-card rounded-xl p-4 card-hover border border-gray-800 hover:border-primary/30"
+               target="_blank" rel="noopener noreferrer">
+                <img src="./assets/avt-github.jpg" 
+                     alt="GitHub" 
+                     class="w-12 h-12 social-avatar mr-4"
+                     onerror="this.src='https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64'">
+                <div class="flex-1">
+                    <h3 class="font-medium text-white">Github</h3>
+                    <p class="text-gray-400 text-sm">AkaneTsukiii</p>
+                </div>
+                <i class="fas fa-external-link-alt text-gray-400"></i>
+            </a>
+
+            <!-- Discord Link -->
+            <a href="https://discordapp.com/users/1303349353192230942" 
+               class="flex items-center bg-dark-card rounded-xl p-4 card-hover border border-gray-800 hover:border-primary/30"
+               target="_blank" rel="noopener noreferrer">
+                <img src="./assets/avt-discord.jpg" 
+                     alt="Discord" 
+                     class="w-12 h-12 social-avatar mr-4"
+                     onerror="this.src='https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64'">
+                <div class="flex-1">
+                    <h3 class="font-medium text-white">Akane Tsuki (Discord)</h3>
+                    <p class="text-gray-400 text-sm">akane.tsukiii</p>
+                </div>
+                <i class="fas fa-external-link-alt text-gray-400"></i>
+            </a>
+
+            <!-- Facebook Link -->
+            <a href="https://facebook.com/akane.tsukiii" 
+               class="flex items-center bg-dark-card rounded-xl p-4 card-hover border border-gray-800 hover:border-primary/30"
+               target="_blank" rel="noopener noreferrer">
+                <img src="./assets/avt-facebook.jpg" 
+                     alt="Facebook" 
+                     class="w-12 h-12 social-avatar mr-4"
+                     onerror="this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64'">
+                <div class="flex-1">
+                    <h3 class="font-medium text-white">Nguyễn Khánh (Facebook)</h3>
+                    <p class="text-gray-400 text-sm">Connect on Facebook</p>
+                </div>
+                <i class="fas fa-external-link-alt text-gray-400"></i>
+            </a>
+
+            <!-- TikTok Link -->
+            <a href="https://tiktok.com/@khahnguyn01" 
+               class="flex items-center bg-dark-card rounded-xl p-4 card-hover border border-gray-800 hover:border-primary/30"
+               target="_blank" rel="noopener noreferrer">
+                <img src="./assets/avt-tiktok.jpg" 
+                     alt="TikTok" 
+                     class="w-12 h-12 social-avatar mr-4"
+                     onerror="this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=64&h=64'">
+                <div class="flex-1">
+                    <h3 class="font-medium text-white">Nguyễn Khánh (TikTok)</h3>
+                    <p class="text-gray-400 text-sm">@khahnguyn01</p>
+                </div>
+                <i class="fas fa-external-link-alt text-gray-400"></i>
+            </a>
+        </div>
+
+        <!-- Spotify Playlist Section -->
+        <div class="spotify-container rounded-xl p-6 mb-8">
+            <div class="flex items-center mb-4">
+                <i class="fab fa-spotify text-green-500 text-2xl mr-3"></i>
+                <div>
+                    <h3 class="font-medium text-white">Vocaloid - Akane Tsukiii</h3>
+                    <p class="text-gray-400 text-sm">Spotify Playlist</p>
+                </div>
+            </div>
+            
+            <!-- Spotify Embed -->
+            <div class="rounded-lg overflow-hidden">
+                <iframe id="spotifyEmbed"
+                        src="https://open.spotify.com/embed/playlist/7nWzjWHPVYniUzkCabEvPS?utm_source=generator&theme=0" 
+                        width="100%" 
+                        height="352" 
+                        frameBorder="0" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-gray-500 text-sm">
+            <p>© 2024 akane.tsukiii</p>
+        </div>
+    </div>
+
+    <script src="./assets/avatar-rotation.js"></script>
+    <script>
+        // Initialize page interactions
+        (function() {
+            const socialLinks = document.querySelectorAll('a[href^="https://"]');
+            
+
+            
+            // Add click tracking for social links
+            socialLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Track link clicks (can be extended with analytics)
+                    console.log('Social link clicked:', this.href);
+                });
+            });
+            
+            // Spotify playlist update functionality
+            function updateSpotifyPlaylist() {
+                // This would connect to Spotify API to get updated playlist
+                // For now, it refreshes the current embed
+                const spotifyEmbed = document.getElementById('spotifyEmbed');
+                if (spotifyEmbed) {
+                    const currentSrc = spotifyEmbed.src;
+                    spotifyEmbed.src = '';
+                    setTimeout(() => {
+                        spotifyEmbed.src = currentSrc;
+                    }, 100);
+                }
+            }
+            
+            // Avatar update functionality
+            function updateAvatars() {
+                // This would update avatar files from social media APIs
+                // Implementation would involve backend service to fetch and update avatar files
+                console.log('Avatar update check...');
+            }
+            
+            // Error handling for images
+            document.querySelectorAll('img').forEach(img => {
+                img.addEventListener('error', function() {
+                    this.style.opacity = '0.7';
+                    this.style.filter = 'grayscale(100%)';
+                });
+            });
+            
+            // Smooth scrolling for mobile
+            if (window.innerWidth <= 640) {
+                document.body.style.overscrollBehavior = 'none';
+            }
+            
+            // Initialize periodic updates (commented out for static version)
+            // setInterval(updateAvatars, 3600000); // Update every hour
+            // setInterval(updateSpotifyPlaylist, 1800000); // Update every 30 minutes
+        })();
+    </script>
+</body>
+</html>
